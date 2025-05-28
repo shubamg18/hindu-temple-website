@@ -23,3 +23,15 @@
     align-items: center;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 991px) {
+    .footer nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer {
+        padding: 50px;
+    }
+    
+}

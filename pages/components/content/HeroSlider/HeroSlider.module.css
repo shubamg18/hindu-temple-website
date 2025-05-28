@@ -56,3 +56,23 @@
     color: var(--color-text);
   }
   
+
+  @media only screen and (max-width: 991px) {
+    .heroContent h1 {
+        font-size: 1.75rem;
+        color: var(--color-accent);
+        margin-bottom: 1rem;
+        font-weight: 700;
+        line-height: 120%;
+      }
+      
+      .heroContent p {
+        font-size: 1rem;
+        line-height: 130%;
+        color: var(--color-white);
+      }
+
+      .heroSlide {
+        height: calc(100vh - 120px);
+      }
+  }

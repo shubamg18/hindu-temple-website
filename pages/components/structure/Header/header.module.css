@@ -1,24 +1,144 @@
+.header {
+    position: relative;
+    z-index: 10;
+}
+
 .globalHeaderWrapper {
+    padding: 20px 50px;
+    position: relative;
+}
+
+.headerTopRow {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-}
-
-.globalHeaderWrapper ul {
-    display: flex;
-    gap: 30px;
-    font-weight: 500;
-}
-
-.logoWrapper a {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-    text-transform: uppercase;
-    font-weight: 700;
 }
 
 .logoWrapper {
     max-width: 350px;
+}
+
+.logoText:hover {
+    color: var(--color-accent);
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* Desktop nav and CTA (visible on large screens) */
+.desktopNav {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.desktopNav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+}
+
+.navCTAWrapperDesktop {
+    display: flex;
+    align-items: center;
+}
+
+/* Mobile Toggle Button */
+.menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--color-secondary);
+    padding: 0;
+}
+
+.menuToggle:hover {
+    color: var(--color-accent);
+}
+
+/* Slide-in Mobile Menu */
+.mobileMenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 280px;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.menuOpen {
+    right: 0;
+}
+
+.menuClose {
+    align-self: flex-end;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.mobileMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navCTAWrapper {
+    margin-top: 30px;
+}
+
+/* Mobile Styles */
+@media (max-width: 991px) {
+    .menuToggle {
+        display: block;
+    }
+
+    .globalHeaderWrapper {
+        padding: 20px;
+        padding-right: 40px;
+    }
+
+    .logoWrapper {
+        max-width: 250px;
+    }
+
+    .logoText {
+        display: block;
+        font-size: 14px;
+    }
+
+    .logoLink img {
+        max-width: 80px;
+    }
+
+    .desktopNav,
+    .navCTAWrapperDesktop {
+        display: none;
+    }
 }
