@@ -1,0 +1,85 @@
+.section {
+    background: var(--color-bg);
+    padding: 3rem 1rem;
+    transition: background 0.3s ease;
+}
+
+.section.dark {
+    background: var(--color-bg-dark);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: var(--color-white);
+    border: 1px solid var(--color-accent);
+    border-radius: 12px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(73, 41, 23, 0.1);
+    transition: transform 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.section.dark .card {
+    background: var(--color-card-dark);
+    color: var(--color-text-dark);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.05);
+    border-color: var(--color-secondary);
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 16px rgba(73, 41, 23, 0.4);
+}
+
+.icon {
+    font-size: 3rem;
+    color: var(--color-secondary);
+    margin: 0 auto 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .icon {
+    transform: scale(1.2);
+}
+
+.section h3 {
+    color: var(--color-primary);
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+.section.dark h3 {
+    color: var(--color-accent);
+}
+
+.section p {
+    color: var(--color-text);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.section.dark p {
+    color: var(--color-text-dark);
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

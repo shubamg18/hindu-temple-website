@@ -1,0 +1,58 @@
+.heroSlider {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--color-bg);
+  }
+  
+  .heroSlide {
+    height: calc(100vh - 170px);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .heroContent {
+    background: linear-gradient(rgba(73, 41, 23, 0.7), rgba(73, 41, 23, 0.7));
+    padding: 2rem;
+    color: var(--color-white);
+    text-align: center;
+    border-radius: 12px;
+    max-width: 60%;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  .heroContent h1 {
+    font-size: 2.5rem;
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+  
+  .heroContent p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--color-white);
+  }
+  
+  .heroBtn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .heroBtn:hover {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+  }
+  

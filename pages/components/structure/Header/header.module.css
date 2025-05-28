@@ -1,0 +1,24 @@
+.globalHeaderWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.globalHeaderWrapper ul {
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+}
+
+.logoWrapper a {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.logoWrapper {
+    max-width: 350px;
+}
