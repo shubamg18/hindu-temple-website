@@ -12,7 +12,7 @@ const cards = [
   {
     icon: <FaGopuram className={styles.icon} />,
     title: "Donate a Moorthi",
-    description: "Donate a Moorthi of Christchurch Hindu Temple.",
+    description: "Donate a Moorthi of Hawkes Bay Hindu Temple.",
   },
   {
     icon: <FaUniversity className={styles.icon} />,

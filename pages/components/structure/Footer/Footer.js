@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className={styles.logoWrapper}>
                     <Link href="/">
                         <Image
-                            src="/images/header-logo.png"
+                            src="/images/Hawkes-Bay-Hindu-Temple.png"
                             alt="Site Logo"
                             width={150}
                             height={150}
@@ -63,7 +63,7 @@ const Footer = () => {
                 <div className={styles.navCTAWrapper}>
                     <Link className="button" href="/donate">Donate Now</Link>
                 </div>
-                <div className={styles.copyright}>© Christchurch Hindu Temple & Hindu Culture Centre . All Rights Reserved.</div>
+                <div className={styles.copyright}>© Hawkes Bay Hindu Temple & Hindu Culture Centre . All Rights Reserved.</div>
             </div>
         </footer>
     );

@@ -7,7 +7,7 @@ import styles from "./HeroSlider.module.css";
 const HeroSlider = () => {
     const slides = [
         {
-            image: "/images/temple1.jpg",
+            image: "/images/temple3.jpg",
             title: "Temple Constuction Starts soon",
             description: "5 Acre beautiful land for our magnificent temple land purchased - 14 Hasketts Road, Templeton.",
             cta: "Donate Now",

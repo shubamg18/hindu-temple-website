@@ -14,13 +14,13 @@ const Header = () => {
                         <Link href="/">
                             <div className={styles.logoLink}>
                                 <Image
-                                    src="/images/header-logo.png"
+                                    src="/images/Hawkes-Bay-Hindu-Temple.png"
                                     alt="Site Logo"
                                     width={130}
                                     height={130}
                                     priority
                                 />
-                                <div className={styles.logoText}>Christchurch Hindu Temple and Culture Centre</div>
+                                <div className={styles.logoText}>Hawkes Bay Hindu Temple and Culture Centre</div>
                             </div>
                         </Link>
                     </div>
